@@ -12,17 +12,31 @@ import {
   WebsiteRights,
   SocialIcons,
   SocialIconLink,
+  FooterLinksContainer,
+  FooterLinksWrapper,
+  FooterLinkItem,
+  FooterLinkTitle,
+  FooterLink,
 } from "./FooterElements";
 
 const Footer = () => {
-
-    const toggleHome = () => {
-      scroll.scrollToTop();
-    };
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
 
   return (
     <FooterContainer>
       <FooterWrap>
+        <FooterLinksContainer>
+          <FooterLinksWrapper>
+            <FooterLinkItem>
+              <FooterLinkTitle>Made With:</FooterLinkTitle>
+              <FooterLink to="/">React.js,</FooterLink>
+              <FooterLink to="/">Styled Components,</FooterLink>
+              <FooterLink to="/">Chakra UI.</FooterLink>
+            </FooterLinkItem>
+          </FooterLinksWrapper>
+        </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo
@@ -36,6 +50,7 @@ const Footer = () => {
             >
               Geeth
             </SocialLogo>
+
             <WebsiteRights>
               Geeth Gunnampalli © {new Date().getFullYear()} All Rights Reserved
             </WebsiteRights>
