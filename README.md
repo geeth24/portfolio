@@ -1,9 +1,8 @@
-# Portfolio
+# Geeth Gunnampalli's Portfolio
 
 ## This is my portfolio site.
 
 ### Made With: React.js, Styled Components and Chakra UI
-
 
 # Forking this repo
 
