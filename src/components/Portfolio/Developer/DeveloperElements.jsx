@@ -10,7 +10,7 @@ export const DeveloperContainer = styled.div`
   background-color: #010515;
 
   @media (max-width: 768px) {
-    height: 1500px;
+    height: 1700px;
   }
 
   @media (max-width: 480px) {
