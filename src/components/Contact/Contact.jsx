@@ -7,7 +7,13 @@ import {
   ContactH1,
 } from "./ContactElements";
 
-import { FormControl, FormLabel, Input, Button, useToast } from "@chakra-ui/react";
+import {
+  FormControl,
+  FormLabel,
+  Input,
+  Button,
+  useToast,
+} from "@chakra-ui/react";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -15,22 +21,33 @@ const Contact = () => {
   const [message, setMessage] = useState("");
 
   const [submitting, setSubmitting] = useState(false);
+  const [emptyFields, setEmptyFields] = useState(false);
 
   const formSparkUrl = "https://submit-form.com/uMokO5XM";
-    const toast = useToast();
-
+  const toast = useToast();
 
   const submitForm = async (event: FormEvent) => {
-    event.preventDefault();
-    setSubmitting(true);
-    await postSubmission();
-    setSubmitting(false);
+    if (name && email && message && emptyFields===true!= null) {
+      event.preventDefault();
+      setSubmitting(true);
+      await postSubmission();
+      setSubmitting(false);
+    }else{
+      setEmptyFields(true);
+      toast({
+        title: "Please fill out all fields",
+        description: "",
+        status: "error",
+        duration: 5000,
+        isClosable: true,
+      });
+    }
   };
   const postSubmission = async () => {
     const payload = {
-      "form-email": email,
-      "form-name": name,
-      "form-message": message,
+      "email": email,
+      "name": name,
+      "message": message,
     };
 
     try {
@@ -66,6 +83,8 @@ const Contact = () => {
             placeholder="Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            isInvalid={emptyFields && !name}
+            errorBorderColor="red.300"
           />
         </FormControl>
         <FormControl id="email" boxShadow="lg" isRequired>
@@ -77,6 +96,8 @@ const Contact = () => {
             placeholder="info@geethg.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            isInvalid={emptyFields && !email}
+            errorBorderColor="red.300"
           />
         </FormControl>
         <FormControl id="message" boxShadow="lg" isRequired>
@@ -87,11 +108,13 @@ const Contact = () => {
             placeholder="Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            isInvalid={emptyFields && !message}
+            errorBorderColor="red.300"
           />
         </FormControl>
         <FormControl>
           <Button
-          isLoading={submitting}
+            isLoading={submitting}
             bgColor="#00aeff"
             borderColor="#00aeff!important"
             color="#010515"
