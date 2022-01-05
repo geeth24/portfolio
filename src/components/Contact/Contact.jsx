@@ -27,12 +27,12 @@ const Contact = () => {
   const toast = useToast();
 
   const submitForm = async (event: FormEvent) => {
-    if (name && email && message && emptyFields===true!= null) {
+    if (name && email && message != null && emptyFields === true) {
       event.preventDefault();
       setSubmitting(true);
       await postSubmission();
       setSubmitting(false);
-    }else{
+    } else {
       setEmptyFields(true);
       toast({
         title: "Please fill out all fields",
