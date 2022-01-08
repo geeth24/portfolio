@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "../../images/GeethC.png";
 import Video from "../../videos/video.mp4";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion/dist/es/index";
@@ -7,7 +6,6 @@ import { motion } from "framer-motion/dist/es/index";
 import {
   HeroContainer,
   HeroBg,
-  HeroBgImage,
   HeroBgVideo,
   HeroContent,
   HeroH1,
@@ -79,7 +77,6 @@ const Hero = () => {
             </SocialIconLink>
           </SocialIcons>
         </TextContent>
-        <HeroBgImage src={Image} type="image/jpg" />
       </HeroContent>
     </HeroContainer>
   );

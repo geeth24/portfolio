@@ -10,7 +10,7 @@ export const homeObjOne = {
   description2: " Scroll down to see some of my projects.",
   buttonLabel: "Learn More",
   imgStart: true,
-  img: require("../../images/svg-1.svg").default,
+  img: require("../../images/Geeth.jpeg").default,
   alt: "car",
   dark: true,
   primary: true,

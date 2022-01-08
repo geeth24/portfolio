@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.div`
   height: 1000px;
-  background-color: #000;
+  background-color: #010515;
+  background-image: linear-gradient(#00aeff, #010515);
+
   display: flex;
   flex-direction: column;
   align-items: center;
