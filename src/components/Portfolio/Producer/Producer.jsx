@@ -1,19 +1,6 @@
 import React from "react";
-
-import {
-  ProducerContainer,
-  ProducerWrapper,
-  ProducerCards,
-  ProducerCard,
-  ProducerIcon,
-  ProducerCardH1,
-  ProducerCardP,
-} from "./ProducerElements";
-
-import BurningBridges from "../../../images/burningbridges.jpg";
-import Boyfriend from "../../../images/boyfriend.jpg";
-import Lights from "../../../images/lights.jpg";
-
+import styled from "styled-components";
+import ProdCarousel from "./ProdCarousel";
 
 const Producer = () => {
   return (
@@ -21,33 +8,34 @@ const Producer = () => {
       {/* <ProducerH1>Producer</ProducerH1> */}
       <ProducerContainer>
         <ProducerWrapper>
-          <ProducerCards>
-            <ProducerCard>
-              <ProducerIcon src={BurningBridges} />
-              <ProducerCardH1>Burning Bridges</ProducerCardH1>
-              <ProducerCardP>
-                Produced by me and featuring ZNO and Itihas.
-              </ProducerCardP>
-            </ProducerCard>
-            <ProducerCard>
-              <ProducerIcon src={Boyfriend} />
-              <ProducerCardH1>Boyfriend</ProducerCardH1>
-              <ProducerCardP>
-                Produced by me and featuring Itihas.
-              </ProducerCardP>
-            </ProducerCard>
-            <ProducerCard>
-              <ProducerIcon src={Lights} />
-              <ProducerCardH1>Lights</ProducerCardH1>
-              <ProducerCardP>
-                Produced by me and featuring MRAV.
-              </ProducerCardP>
-            </ProducerCard>
-          </ProducerCards>
+          <ProdCarousel />
         </ProducerWrapper>
       </ProducerContainer>
     </>
   );
 };
+
+export const ProducerContainer = styled.div`
+  color: white;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #010515;
+`;
+
+export const ProducerWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  height: 860px;
+  width: 100%;
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 24px;
+  justify-content: center;
+`;
 
 export default Producer;

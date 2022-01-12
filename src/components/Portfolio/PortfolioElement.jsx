@@ -8,4 +8,5 @@ export const PortfolioContainer = styled.div`
   padding: 48px;
   padding: 24px;
   padding: 24px;
+
 `;

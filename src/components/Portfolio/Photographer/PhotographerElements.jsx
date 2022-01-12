@@ -4,10 +4,7 @@ export const PhotographerContainer = styled.div`
   color: white;
   align-items: center;
   background-color: #010515;
-
-
-
- 
+  height: auto;
 `;
 
 export const PhotographerH1 = styled.h1`
