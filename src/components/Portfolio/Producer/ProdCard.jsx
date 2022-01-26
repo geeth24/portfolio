@@ -15,7 +15,7 @@ const ProdCard = ({ id, title, description, date, image, link }) => {
       <Image
         roundedTop="lg"
         rounded="full"
-        h="60x"
+        h="200px"
         fit="contain"
         src={image}
         alt="Img"
