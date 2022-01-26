@@ -16,7 +16,7 @@ const DevCard = ({ id, title, description, client, date, image, link }) => {
       <Image
         roundedTop="lg"
         rounded="full"
-        h={64}
+        h="60x"
         fit="contain"
         src={image}
         alt="Img"

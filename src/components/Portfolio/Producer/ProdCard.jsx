@@ -15,7 +15,7 @@ const ProdCard = ({ id, title, description, date, image, link }) => {
       <Image
         roundedTop="lg"
         rounded="full"
-        h={64}
+        h="60x"
         fit="contain"
         src={image}
         alt="Img"
@@ -30,7 +30,7 @@ const ProdCard = ({ id, title, description, date, image, link }) => {
             fontWeight="bold"
             fontSize="2xl"
             mt={2}
-            _hover={{ color: "#fff"}}
+            _hover={{ color: "#fff" }}
             href={link}
             textShadow="0px 0px 10px #000"
           >
