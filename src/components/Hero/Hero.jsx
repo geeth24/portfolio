@@ -1,12 +1,8 @@
 import React from "react";
-import Video from "../../videos/video.mp4";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { motion } from "framer-motion/dist/es/index";
-
+import { motion } from "framer-motion";
 import {
   HeroContainer,
-  HeroBg,
-  HeroBgVideo,
   HeroContent,
   HeroH1,
   HeroH2,
@@ -14,19 +10,14 @@ import {
   SocialIcons,
   SocialIconLink,
 } from "./HeroElements";
+import Particles from "react-tsparticles";
+import options from "./particles";
 
 const Hero = () => {
   return (
     <HeroContainer id="home">
-      <HeroBg></HeroBg>
-      <HeroBgVideo
-        autoPlay
-        loop
-        muted
-        playsInline
-        src={Video}
-        type="video/mp4"
-      />
+      <Particles options={options} />
+
       <HeroContent>
         <TextContent>
           <HeroH1>Hi, I'm</HeroH1>

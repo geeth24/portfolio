@@ -9,6 +9,9 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 
   @media (max-width: 768px) {
     height: 700px;

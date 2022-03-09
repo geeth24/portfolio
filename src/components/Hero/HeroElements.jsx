@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { motion } from "framer-motion/dist/es";
-
+import { motion } from "framer-motion";
 export const HeroContainer = styled.div`
   background-color: black;
   display: flex;
@@ -8,7 +7,7 @@ export const HeroContainer = styled.div`
   align-items: center;
   /* padding: 0 30px; */
   height: 800px;
-  position: relative;
+  position: sticky;
   z-index: 1;
 
   :before {
@@ -113,7 +112,6 @@ export const HeroBtnWrapper = styled.div`
   flex-direction: column;
   align-items: center;
 `;
-
 
 export const SocialIcons = styled.div`
   display: flex;
