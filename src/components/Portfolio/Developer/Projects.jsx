@@ -1,8 +1,8 @@
-import MyPanchang from "../../../images/mypanchang.png";
-import WorkTracker from "../../../images/worktracker.png";
-import RadSoftInc from "../../../images/radsoftinc.png";
-import CoppellForYouth from "../../../images/coppellforyouth.png";
-import HSConnect from "../../../images/hsconnect.jpg";
+import MyPanchang from "../../../images/mypanchang.webp";
+import WorkTracker from "../../../images/worktracker.webp";
+import RadSoftInc from "../../../images/radsoftinc.webp";
+import CoppellForYouth from "../../../images/coppellforyouth.webp";
+import HSConnect from "../../../images/hsconnect.webp";
 
 export const projects = [
   {

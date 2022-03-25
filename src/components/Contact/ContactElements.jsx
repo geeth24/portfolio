@@ -10,7 +10,6 @@ export const ContactContainer = styled.div`
   align-items: center;
   justify-content: center;
   position: sticky;
-  top: 0;
   z-index: 1;
 
   @media (max-width: 768px) {

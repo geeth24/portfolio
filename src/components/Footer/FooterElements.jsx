@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 export const FooterContainer = styled.div`
   background-color: #010515;
   position: sticky;
+  top: 0;
   z-index: 1;
 `;
 
@@ -16,10 +17,9 @@ export const FooterWrap = styled.div`
   max-width: 1100px;
   margin: 0 auto;
   @media (max-width: 768px) {
-      align-items: center;
+    align-items: center;
   }
 `;
-
 
 export const SocialMedia = styled.section`
   max-width: 1000px;
@@ -66,7 +66,6 @@ export const SocialIconLink = styled.a`
   font-size: 24px;
 `;
 
-
 export const FooterLinksContainer = styled.div`
   display: flex;
   justify-content: left;
@@ -99,7 +98,6 @@ export const FooterLinkItem = styled.div`
     margin: 0;
     padding: 10px;
     width: 100%;
-    
   }
   @media screen and (max-width: 768px) {
     align-items: center;
@@ -114,5 +112,4 @@ export const FooterLink = styled.div`
   text-decoration: none;
   margin-bottom: 0.5rem;
   font-size: 14px;
-
 `;

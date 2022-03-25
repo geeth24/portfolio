@@ -1,6 +1,6 @@
 import React from "react";
 
-import { PhotographerContainer } from "./PhotographerElements";
+import { PhotographerCardP, PhotographerContainer, PhotographerH1 } from "./PhotographerElements";
 
 import ImageGallery from "react-image-gallery";
 
@@ -118,8 +118,10 @@ const images = [
 const Photographer = () => {
   return (
     <>
-      {/* <PhotographerH1>Photographer</PhotographerH1> */}
       <PhotographerContainer>
+        <PhotographerH1>Photographer</PhotographerH1>
+        <PhotographerCardP>Reactive Shots</PhotographerCardP>
+
         <ImageGallery items={images} />
       </PhotographerContainer>
     </>

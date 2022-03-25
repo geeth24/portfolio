@@ -1,7 +1,7 @@
-import Emotions from "../../../images/emotions.png";
-import BurningBridges from "../../../images/burningbridges.jpg";
-import Boyfriend from "../../../images/boyfriend.jpg";
-import Lights from "../../../images/lights.jpg";
+import Emotions from "../../../images/emotions.webp";
+import BurningBridges from "../../../images/burningbridges.webp";
+import Boyfriend from "../../../images/boyfriend.webp";
+import Lights from "../../../images/lights.webp";
 
 
 export const music = [
