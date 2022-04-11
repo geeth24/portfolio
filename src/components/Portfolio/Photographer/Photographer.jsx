@@ -8,22 +8,22 @@ import {
 
 import PhotoAlbum from "react-photo-album";
 
-import One from "../../../images/photographer/ReactShots 1.jpg";
-import Two from "../../../images/photographer/ReactShots 2.jpg";
-import Three from "../../../images/photographer/ReactShots 3.jpg";
-import Four from "../../../images/photographer/ReactShots 4.jpg";
-import Five from "../../../images/photographer/ReactShots 5.jpg";
-import Six from "../../../images/photographer/ReactShots 6.jpg";
-import Seven from "../../../images/photographer/ReactShots 7.jpg";
-import Eight from "../../../images/photographer/ReactShots 8.jpg";
-import Nine from "../../../images/photographer/ReactShots 9.jpg";
-import Ten from "../../../images/photographer/ReactShots 10.jpg";
-import Eleven from "../../../images/photographer/ReactShots 11.jpg";
-import Twelve from "../../../images/photographer/ReactShots 12.jpg";
-import Thirteen from "../../../images/photographer/ReactShots 13.jpg";
-import Fourteen from "../../../images/photographer/ReactShots 14.jpg";
-import Fifteen from "../../../images/photographer/ReactShots 15.jpg";
-import Sixteen from "../../../images/photographer/ReactShots 16.jpg";
+import One from "../../../images/photographer/ReactShots 1-min.jpg";
+import Two from "../../../images/photographer/ReactShots 2-min.jpg";
+import Three from "../../../images/photographer/ReactShots 3-min.jpg";
+import Four from "../../../images/photographer/ReactShots 4-min.jpg";
+import Five from "../../../images/photographer/ReactShots 5-min.jpg";
+import Six from "../../../images/photographer/ReactShots 6-min.jpg";
+import Seven from "../../../images/photographer/ReactShots 7-min.jpg";
+import Eight from "../../../images/photographer/ReactShots 8-min.jpg";
+import Nine from "../../../images/photographer/ReactShots 9-min.jpg";
+import Ten from "../../../images/photographer/ReactShots 10-min.jpg";
+import Eleven from "../../../images/photographer/ReactShots 11-min.jpg";
+import Twelve from "../../../images/photographer/ReactShots 12-min.jpg";
+import Thirteen from "../../../images/photographer/ReactShots 13-min.jpg";
+import Fourteen from "../../../images/photographer/ReactShots 14-min.jpg";
+import Fifteen from "../../../images/photographer/ReactShots 15-min.jpg";
+import Sixteen from "../../../images/photographer/ReactShots 16-min.jpg";
 
 const images = [
   {
