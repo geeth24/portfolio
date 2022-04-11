@@ -6,9 +6,6 @@ import {
   PhotographerH1,
 } from "./PhotographerElements";
 
-import ImageGallery from "react-image-gallery";
-
-import "react-image-gallery/styles/css/image-gallery.css";
 import PhotoAlbum from "react-photo-album";
 
 import One from "../../../images/photographer/ReactShots 1.jpg";
