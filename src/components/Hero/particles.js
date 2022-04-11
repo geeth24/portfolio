@@ -1,6 +1,6 @@
 
 const options = {
-    fpsLimit: 165,
+    fpsLimit: 60,
     particles: {
         number: {
             value: 80,
