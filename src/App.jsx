@@ -6,6 +6,7 @@ import { PhotographerDom } from "./components/Portfolio/Photographer/Photographe
 import Sidebar from "./components/Sidebar/Sidebar";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import Contact from "./components/Contact/Contact";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
@@ -16,7 +17,15 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/reactiveshots" element={<PhotographerDom />} />
+          <Route
+            path="/reactiveshots"
+            element={
+              <>
+                <PhotographerDom />
+                <Contact />
+              </>
+            }
+          />
         </Routes>
         <Footer />
       </Router>
