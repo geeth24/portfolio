@@ -1,8 +1,6 @@
 import React from "react";
 import { FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
-import { animateScroll as scroll } from "react-scroll";
-
 import {
   FooterContainer,
   FooterWrap,
@@ -20,10 +18,6 @@ import {
 } from "./FooterElements";
 
 const Footer = () => {
-  const toggleHome = () => {
-    scroll.scrollToTop();
-  };
-
   return (
     <FooterContainer>
       <FooterWrap>

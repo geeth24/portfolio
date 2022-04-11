@@ -1,7 +1,6 @@
 import React from "react";
 
 import {
-  PhotographerCardH1,
   PhotographerCardP,
   PhotographerContainer,
   PhotographerDomContainer,
