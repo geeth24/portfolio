@@ -1,119 +1,119 @@
 import React from "react";
 
-import { PhotographerCardP, PhotographerContainer, PhotographerH1 } from "./PhotographerElements";
+import {
+  PhotographerCardP,
+  PhotographerContainer,
+  PhotographerH1,
+} from "./PhotographerElements";
 
 import ImageGallery from "react-image-gallery";
 
 import "react-image-gallery/styles/css/image-gallery.css";
+import PhotoAlbum from "react-photo-album";
 
-import One from "../../../images/photographer/1.jpg";
-import Two from "../../../images/photographer/2.JPG";
-import Three from "../../../images/photographer/3.jpg";
-import Four from "../../../images/photographer/4.jpg";
-import Five from "../../../images/photographer/5.jpg";
-import Six from "../../../images/photographer/6.jpg";
-import Seven from "../../../images/photographer/7.jpg";
-import Eight from "../../../images/photographer/8.jpg";
-import Nine from "../../../images/photographer/9.jpeg";
-import Ten from "../../../images/photographer/10.jpg";
-import Eleven from "../../../images/photographer/11.jpg";
-import Twelve from "../../../images/photographer/12.JPG";
-import Thirteen from "../../../images/photographer/13.jpg";
-import Fourteen from "../../../images/photographer/14.JPG";
-import Fifteen from "../../../images/photographer/15.JPG";
+import One from "../../../images/photographer/ReactShots 1.jpg";
+import Two from "../../../images/photographer/ReactShots 2.jpg";
+import Three from "../../../images/photographer/ReactShots 3.jpg";
+import Four from "../../../images/photographer/ReactShots 4.jpg";
+import Five from "../../../images/photographer/ReactShots 5.jpg";
+import Six from "../../../images/photographer/ReactShots 6.jpg";
+import Seven from "../../../images/photographer/ReactShots 7.jpg";
+import Eight from "../../../images/photographer/ReactShots 8.jpg";
+import Nine from "../../../images/photographer/ReactShots 9.jpg";
+import Ten from "../../../images/photographer/ReactShots 10.jpg";
+import Eleven from "../../../images/photographer/ReactShots 11.jpg";
+import Twelve from "../../../images/photographer/ReactShots 12.jpg";
+import Thirteen from "../../../images/photographer/ReactShots 13.jpg";
+import Fourteen from "../../../images/photographer/ReactShots 14.jpg";
+import Fifteen from "../../../images/photographer/ReactShots 15.jpg";
+import Sixteen from "../../../images/photographer/ReactShots 16.jpg";
 
 const images = [
   {
-    original: One,
-    thumbnail: One,
-    originalHeight: 40,
-    originalWidth: 40,
+    src: One,
+    width: 175,
+    height: 125,
   },
   {
-    original: Two,
-    thumbnail: Two,
-    originalHeight: 40,
-    originalWidth: 40,
+    src: Two,
+    width: 175,
+    height: 125,
   },
   {
-    original: Three,
-    thumbnail: Three,
-    originalHeight: 40,
-    originalWidth: 40,
+    src: Three,
+    width: 175,
+    height: 125,
   },
   {
-    original: Four,
-    thumbnail: Four,
-    originalHeight: 40,
-    originalWidth: 40,
+    src: Four,
+    width: 175,
+    height: 125,
   },
   {
-    original: Five,
-    thumbnail: Five,
-    originalHeight: 40,
-    originalWidth: 40,
+    src: Five,
+    width: 175,
+    height: 125,
   },
   {
-    original: Six,
-    thumbnail: Six,
-    originalHeight: 40,
-    originalWidth: 40,
+    src: Six,
+    width: 175,
+    height: 125,
   },
   {
-    original: Seven,
-    thumbnail: Seven,
-    originalHeight: 40,
-    originalWidth: 40,
+    src: Seven,
+    width: 175,
+    height: 125,
   },
   {
-    original: Eight,
-    thumbnail: Eight,
-    originalHeight: 40,
-    originalWidth: 40,
+    src: Eight,
+    width: 175,
+    height: 125,
   },
   {
-    original: Nine,
-    thumbnail: Nine,
-    originalHeight: 40,
-    originalWidth: 40,
+    src: Nine,
+    width: 125,
+    height: 175,
   },
   {
-    original: Ten,
-    thumbnail: Ten,
-    originalHeight: 40,
-    originalWidth: 40,
+    src: Ten,
+    width: 125,
+    height: 175,
   },
   {
-    original: Eleven,
-    thumbnail: Eleven,
-    originalHeight: 40,
-    originalWidth: 40,
+    src: Eleven,
+    width: 125,
+    height: 175,
   },
   {
-    original: Twelve,
-    thumbnail: Twelve,
-    originalHeight: 40,
-    originalWidth: 40,
+    src: Twelve,
+    width: 175,
+    height: 125,
   },
   {
-    original: Thirteen,
-    thumbnail: Thirteen,
-    originalHeight: 40,
-    originalWidth: 40,
+    src: Thirteen,
+    width: 125,
+    height: 175,
   },
   {
-    original: Fourteen,
-    thumbnail: Fourteen,
-    originalHeight: 40,
-    originalWidth: 40,
+    src: Fourteen,
+    width: 175,
+    height: 125,
   },
   {
-    original: Fifteen,
-    thumbnail: Fifteen,
-    originalHeight: 40,
-    originalWidth: 40,
+    src: Fifteen,
+    width: 125,
+    height: 175,
+  },
+  {
+    src: Sixteen,
+    width: 175,
+    height: 125,
   },
 ];
+
+
+
+
 
 const Photographer = () => {
   return (
@@ -121,8 +121,7 @@ const Photographer = () => {
       <PhotographerContainer>
         <PhotographerH1>Photographer</PhotographerH1>
         <PhotographerCardP>Reactive Shots</PhotographerCardP>
-
-        <ImageGallery items={images} />
+        <PhotoAlbum layout="masonry" photos={images} />
       </PhotographerContainer>
     </>
   );
