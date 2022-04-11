@@ -39,17 +39,7 @@ const Footer = () => {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo
-              to="/"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-80}
-              onClick={toggleHome}
-            >
-              Geeth
-            </SocialLogo>
+            <SocialLogo to="/">Geeth</SocialLogo>
 
             <WebsiteRights>
               Geeth Gunnampalli © {new Date().getFullYear()} All Rights Reserved
