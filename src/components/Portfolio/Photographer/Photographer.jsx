@@ -1,9 +1,12 @@
 import React from "react";
 
 import {
+  PhotographerCardH1,
   PhotographerCardP,
   PhotographerContainer,
+  PhotographerDomContainer,
   PhotographerH1,
+  PhotographerH12,
 } from "./PhotographerElements";
 
 import PhotoAlbum from "react-photo-album";
@@ -108,10 +111,6 @@ const images = [
   },
 ];
 
-
-
-
-
 const Photographer = () => {
   return (
     <>
@@ -120,6 +119,17 @@ const Photographer = () => {
         <PhotographerCardP>Reactive Shots</PhotographerCardP>
         <PhotoAlbum layout="masonry" photos={images} />
       </PhotographerContainer>
+    </>
+  );
+};
+
+export const PhotographerDom = () => {
+  return (
+    <>
+      <PhotographerDomContainer>
+        <PhotographerH12>Reactive Shots</PhotographerH12>
+        <PhotoAlbum layout="masonry" photos={images} />
+      </PhotographerDomContainer>
     </>
   );
 };

@@ -7,6 +7,14 @@ export const PhotographerContainer = styled.div`
   height: auto;
 `;
 
+export const PhotographerDomContainer = styled.div`
+  color: white;
+  align-items: center;
+  background-color: #010515;
+  height: auto;
+  padding: 10px;
+`;
+
 export const PhotographerH1 = styled.h1`
   color: white;
   font-size: 32px;
@@ -70,6 +78,17 @@ export const PhotographerCardH1 = styled.h1`
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 16px;
+`;
+
+export const PhotographerH12 = styled.h1`
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+  }
 `;
 
 export const PhotographerCardP = styled.p`
