@@ -29,7 +29,7 @@ export const PhotographerH1 = styled.h1`
 export const PhotographerWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  z-index: 1;
+  z-index: 3;
   height: 860px;
   width: 100%;
   max-width: 1100px;
