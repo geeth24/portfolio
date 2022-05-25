@@ -6,7 +6,7 @@ export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? "#010515" : "transparent")};
   height: 80px;
   margin-top: -80px;
-  display: flex;
+  display: row;
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
@@ -20,12 +20,28 @@ export const Nav = styled.nav`
 `;
 
 export const NavbarContainer = styled.div`
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  height: 80px;
-  z-index: 1;
-  width: 100%;
-  padding: 0 24px;
+  z-index: 3;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 24px;
+  padding: 24px;
 `;
 
 export const NavLogo = styled(LinkR)`
@@ -36,6 +52,8 @@ export const NavLogo = styled(LinkR)`
   display: flex;
   align-items: center;
   margin-left: 24px;
+  padding: 24px;
+  width: fit-content;
   font-weight: bold;
   text-decoration: none;
 `;
@@ -45,7 +63,7 @@ export const MobileIcon = styled.div`
 
   @media screen and (max-width: 768px) {
     color: #fff;
-    display: block;
+    display: flex;
     position: absolute;
     top: 0;
     right: 0;
@@ -56,10 +74,24 @@ export const MobileIcon = styled.div`
 `;
 
 export const NavMenu = styled.ul`
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  //reduce space between items
+  margin: 0;
+  padding: 0;
   list-style: none;
-  text-align: center;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -67,7 +99,7 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 60px;
+  height: 30px;
 `;
 
 export const NavLinks = styled(LinkS)`
@@ -75,21 +107,24 @@ export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
-  height: 80%;
   cursor: pointer;
-  font-weight: 400;
   transition: 0.2s all ease;
   border-radius: 10px;
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
 
   &.active {
-    color: #00aeff;
+    background-color: #00aeff;
     transform: scale(1.2);
     font-weight: bold;
   }
   &:hover {
     background-color: #00aeff78;
   }
+  
 `;
 
 export const NavBtn = styled.nav`

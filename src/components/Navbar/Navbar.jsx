@@ -35,13 +35,13 @@ const Navbar = ({ toggle }) => {
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav scrollNav={scrollNav}>
+          <NavLogo to="/" onClick={toggleHome}>
+            Geeth
+          </NavLogo>
+          <MobileIcon onClick={toggle}>
+            <FaBars />
+          </MobileIcon>
           <NavbarContainer>
-            <NavLogo to="/" onClick={toggleHome}>
-              Geeth
-            </NavLogo>
-            <MobileIcon onClick={toggle}>
-              <FaBars />
-            </MobileIcon>
             <NavMenu>
               <NavItem>
                 <NavLinks
@@ -51,9 +51,7 @@ const Navbar = ({ toggle }) => {
                   spy={true}
                   exact="true"
                   offset={-80}
-                >
-                  Home
-                </NavLinks>
+                ></NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
@@ -63,9 +61,7 @@ const Navbar = ({ toggle }) => {
                   spy={true}
                   exact="true"
                   offset={-80}
-                >
-                  About Me
-                </NavLinks>
+                ></NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
@@ -75,9 +71,7 @@ const Navbar = ({ toggle }) => {
                   spy={true}
                   exact="true"
                   offset={-80}
-                >
-                  Portfolio
-                </NavLinks>
+                ></NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
@@ -87,9 +81,7 @@ const Navbar = ({ toggle }) => {
                   spy={true}
                   exact="true"
                   offset={-80}
-                >
-                  Contact
-                </NavLinks>
+                ></NavLinks>
               </NavItem>
             </NavMenu>
           </NavbarContainer>
