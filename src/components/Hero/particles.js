@@ -29,8 +29,10 @@ const options = {
 
     background: {
         image: "radial-gradient(#00aeff, #010515)",
-        
+
     },
+    detectRetina: true,
+
 };
 
 
