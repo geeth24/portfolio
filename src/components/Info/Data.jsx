@@ -1,4 +1,4 @@
-import Geeth from "../../images/Geeth.JPG";
+import Geeth from "../../images/Geeth.jpg";
 export const homeObjOne = {
   id: "aboutme",
   lightBg: false,
