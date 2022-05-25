@@ -60,7 +60,7 @@ const Hero = () => {
               <FaLinkedinIn />
             </SocialIconLink>
             <SocialIconLink
-              href="https://www.instagram.com/thetechie.official/?hl=en"
+              href="https://www.instagram.com/geethsg7/?hl=en"
               target="_blank"
               aria-label="Instagram"
             >
